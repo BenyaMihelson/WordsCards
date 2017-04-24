@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_final_layer">
+
+
+
+        <TextView
+            android:text="@string/tv_title_of_finish_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            style="@style/AppTheme.CardsText"
+            android:id="@+id/textView"
+            android:layout_gravity="center"
+             />
+
+        <TextView
+            android:text="@string/tv_text_of_finish_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/AppTheme.TextOfFinalPage"
+            android:id="@+id/textView2"
+            />
+
+        <Button
+            android:text="@string/btn_back_finish_page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/button_bg"
+            android:id="@+id/buttonBack" />
+
+        <Button
+            android:text="@string/btn_restart_game_finish_page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_bg"
+            android:id="@+id/resetGameBtn" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

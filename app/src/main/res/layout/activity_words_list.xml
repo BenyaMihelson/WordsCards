@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="bogdan_mihalchenko.words.UI.CategoriesListActivity">
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <!--<android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+-->
+
+    <!--<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/bg"
+        >
+
+
+    </RelativeLayout>
+
+-->
+    <include layout="@layout/content_words" />
+
+    <!--<android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_anchor="@id/toolbar"
+        app:layout_anchorGravity="bottom|end"
+        app:srcCompat="@android:drawable/ic_dialog_dialer" />
+-->
+   <!-- <android.support.design.internal.ForegroundLinearLayout
+        android:id="@+id/inputCategoryLayout"
+        android:layout_width="400dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:background="@drawable/floating_layout_bg"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="100dp"
+        android:padding="30dp"
+        >
+-->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_gravity="bottom|start"
+        app:srcCompat="@drawable/ic_plus"
+        />
+
+
+    <android.support.design.internal.ForegroundLinearLayout
+            android:id="@+id/inputWordLayout"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:background="@drawable/floating_layout_bg"
+            android:layout_gravity="top|center"
+            android:layout_marginTop="30dp"
+            android:padding="30dp"
+            >
+        <TextView
+            android:id="@+id/wordsDialogTitle"
+            android:text="@string/add_word_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/AppTheme.DialogTitle"
+            />
+
+        <EditText
+                android:id="@+id/etWordOrigin"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:background="@color/cardview_light_background"
+                android:layout_marginBottom="10dp"
+            android:textCursorDrawable="@null"
+                android:hint="@string/etOriginWordDefaulText"
+                />
+            <EditText
+                android:id="@+id/etWordTranslate"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:background="@color/cardview_light_background"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/etTranslateWordDefaultText"
+                />
+
+            <EditText
+                android:id="@+id/etWordTrancription"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:background="@color/cardview_light_background"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/etTranscriptionDefaultText"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+                <Button
+                    android:id="@+id/addButton"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ok"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/button_bg"
+                    />
+                <Button
+                    android:id="@+id/cancelButton"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/button_bg"
+                    android:text="@string/add_category_dialog_negative_button"/>
+
+            </LinearLayout>
+        </android.support.design.internal.ForegroundLinearLayout>
+
+        <android.support.design.internal.ForegroundLinearLayout
+        android:id="@+id/selecTypeOfGame"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:background="@drawable/floating_layout_bg"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="15dp"
+        android:padding="30dp"
+        >
+        <TextView
+            android:id="@+id/GameSelectDialogTitle"
+            android:text="@string/game_select_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/AppTheme.DialogTitle"
+            />
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:layout_marginBottom="10dp">
+
+                <LinearLayout
+                    android:id="@+id/buttonCards"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:background="@color/bg_card"
+                    android:layout_marginRight="5dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Карточки"
+                        style="@style/AppTheme.DialogButtonText"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/buttonVariants"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:background="@color/bg_card"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Варианты"
+                        style="@style/AppTheme.DialogButtonText"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/selectLangType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+            >
+                <RadioButton
+                    android:id="@+id/selectEnglishRussianType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Русский  - Английский"
+                    android:checked="true"
+                    style="@style/AppTheme.PlainText"
+                     />
+                <RadioButton
+                    android:id="@+id/selectRussianEnglishType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Английсикй -  русккий"
+                    style="@style/AppTheme.PlainText"/>
+
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+                <Button
+                    android:id="@+id/startPlayButton"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ok"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/button_bg"
+                    />
+                <Button
+                    android:id="@+id/cancelPlayButton"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/button_bg"
+                    android:text="@string/add_category_dialog_negative_button"/>
+
+            </LinearLayout>
+
+
+
+
+        </android.support.design.internal.ForegroundLinearLayout>
+
+    <!--</android.support.design.internal.ForegroundLinearLayout>
+-->
+</android.support.design.widget.CoordinatorLayout>

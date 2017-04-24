@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#3f51b5</color>
+    <color name="white">#fff</color>
+    <color name="bg_card">#ffe3ac</color>
+    <color name="card_textColor">#793700</color>
+    <color name="cardFront">#434850</color>
+    <color name="cardBack">#bc4c4a</color>
+    <color name="selectGameTypeButtonColoOnClick">#FFF7DF2A</color>
+    <color name="wrong_ansver_bg">#FFF74C2A</color>
+    <color name="right_answer_bg">#FF2FC714</color>
+
+</resources>

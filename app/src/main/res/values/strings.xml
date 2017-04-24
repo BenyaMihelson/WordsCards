@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Карточки Cards /kɑːrdz/</string>
+    <string name="add_category_dialog_title">Добавить набор карточек</string>
+    <string name="add_category_dialog_default_edit_text">введите текст...</string>
+    <string name="add_category_dialog_positive_button">Добавить</string>
+    <string name="add_category_dialog_negative_button">Отмена</string>
+    <string name="edit_category_dialog_positive_button">Изменить</string>
+    <string name="edit_category_dialog_title">Изменить название</string>
+    <string name="delete_category_dialog_title">Удаление набора карточек</string>
+    <string name="delete_category_dialog_message">Удаление набора карточек приведёт к удалению всех слов находящихся в нем. Продолжить?</string>
+    <string name="delete_category_dialog_positive_button">Удалить</string>
+    <string name="words_nothing_to_show">В данном наборе карточек нет ни одного слова. Добавьте свои слова для изучения</string>
+    <string name="add_word_dialog_title">Добавить слово</string>
+    <string name="game_select_dialog_title">Выбор типа игры</string>
+    <string name="edit_word_dialog_title">Редактировать слово</string>
+    <string name="etOriginWordDefaulText">Введите слово по-русски...</string>
+    <string name="etTranslateWordDefaultText">Type the word in English...</string>
+    <string name="etTranscriptionDefaultText">Type the transcription...</string>
+    <string name="action_delete">Удалить</string>
+    <string name="action_edit">Редактировать</string>
+    <string name="action_play">Начать тренировку</string>
+    <string name="tv_title_of_finish_page">Все слова выучены!</string>
+<string name="tv_text_of_finish_page">Поздравляем! Теперь вы знаете все слова из этой категории.
+    Вы можете приступить к изучению следующего набора карточек или повторить слова в этом наборе еще раз.</string>
+    <string name="btn_back_finish_page">Вернуться к наборам карточек</string>
+    <string name="btn_restart_game_finish_page">Начать тренировку заново</string>
+    <string name="cat_nothing_to_show">Добавьте свой набор карточек чтобы начать учить слова</string>
+    <string name="reclama_dialog_title">Comfort English</string>
+    <string name="warning_text_cards">Для данного типа игры набор должен содержать не менее двух слов</string>
+    <string name="warning_text_variants">Для данного типа игры набор должен содержать не менее четырех слов</string>
+
+
+    <string name="preference_file_key">bogdan_mihalchenko.words.PREFERENCE_FILE_KEY</string>
+</resources>
